@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background: #00000035;
+}
+
+:root {
+    --h-font: 'Fredoka', sans-serif;
+    --p-cont: 'Montserrat', sans-serif;
+
+}
+
+@media only screen and (max-width:688px) {
+    body {
+        position: relative;
+    }
+
+    .box-wrap {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #000000;
+    }
+
+    .box {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        place-items: center;
+        animation: bg 5s ease infinite;
+    }
+
+    h1 {
+        font-family: var(--h-font);
+        font-size: 2em;
+
+    }
+
+    h1::after {
+        content: " best friend for ever";
+        color: rgb(255, 79, 21);
+        animation: slid 5s ease infinite;
+        border-right: 2px solid red;
+        overflow: hidden;
+        display: block;
+        white-space: nowrap;
+
+    }
+
+    .box-text {
+
+        color: #ecf6ff;
+        position: absolute;
+        bottom: 120px;
+        font-size: 1.05rem;
+        padding: 10px 21px 0 23px;
+    }
+
+    @keyframes slid {
+        0% {
+            content: " best friend forever";
+            width: 0%;
+
+        }
+
+        25% {
+            width: 100%;
+            content: " best friend forever";
+
+        }
+
+        50% {
+            width: 0%;
+            content: " best friend forever";
+
+        }
+
+        75% {
+            width: 100%;
+            content: "my bebe sona";
+
+        }
+
+        100% {
+            width: 0%;
+            content: " my babe sona";
+
+        }
+
+
+    }
+
+    @keyframes bg {
+        0% {
+            background-image: url('images/chaya.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        25% {
+            background-image: url('images/jhal-muri.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        50% {
+            background-image: url('images/rose-andice.jpg');
+            opacity: 0.5;
+            background-repeat: no-repeat;
+
+
+        }
+
+
+        75% {
+            background-image: url('images/rose-andice.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        100% {
+            background-image: url('images/we-and-cock.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+}
