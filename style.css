@@ -117,7 +117,7 @@ body {
 
         50% {
             background-image: url('images/rose-andice.jpg');
-            opacity: 0.5;
+            background-size: cover;
             background-repeat: no-repeat;
 
 
