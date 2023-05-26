@@ -28,7 +28,7 @@ body {
         height: 100vh;
         top: 0;
         left: 0;
-        background: #000000;
+        animation: bgi 5s ease infinite;
     }
 
     .box {
@@ -63,6 +63,7 @@ body {
         bottom: 120px;
         font-size: 1.05rem;
         padding: 10px 21px 0 23px;
+        z-index: 2;
     }
 
     @keyframes slid {
@@ -135,6 +136,24 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
 
+        }
+    }
+
+    @keyframes bgi {
+        0% {
+            background: #00000034;
+        }
+
+        25% {
+            background: #00000034;
+        }
+
+        50% {
+            background: #00000034;
+        }
+
+        100% {
+            background: #00000034;
         }
     }
 }
